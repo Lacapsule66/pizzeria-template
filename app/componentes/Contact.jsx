@@ -15,6 +15,16 @@ export default function Contact() {
         end: "bottom 100px",
       },
     });
+    gsap.to("pizzaiolo", {
+      height: "100%",
+      duration: 1.3,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: "#reveal1",
+        start: "top center",
+        end: "bottom 100px",
+        },
+        });
   }, []);
   return (
     <div className="bg-[#0f0f0f]  ">
