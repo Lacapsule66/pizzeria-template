@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import Image from "next/image";
 export default function Carte() {
   return (
-    <div className="h-[150vh]  flex justify-center items-center flex-col">
+    <div className="h-[150vh]   py-12 bg-[#ff5c7d]  flex justify-center items-center flex-col">
       <h2 className='staat heading2 text-8xl mb-6'>Nos Pizzas</h2>
     <div className=" grid lg:grid-cols-3 lg:grid-rows-2 grid-cols-1 gap-12 h-[95%] w-[80%]">
       <div className="grid-item pizza col-span-1 row-span-1 bg-red-500 rounded-xl relative ">

@@ -43,10 +43,24 @@ export default function Last() {
  
       },
     });
+    gsap.to("#pizzaiolo",{
+      scrollTrigger: {
+        trigger: "#pizzaiolo",
+        start: "top center",
+        end: "bottom 100px",
+        toggleActions: "restart none none none",
+        scrub: 1,
+      },
+      height: "100%",
+      width: "100%",
+      objectFit: "cover",
+    })
+
+  
   }, [])
   return (
-    <div className='h-[100vh] flex justify-center  w-full'>
-<div id="split2" className="text-white staat w-full mx-6  text-4xl lg:text-8xl flex justify-center  flex-col">
+    <div className='h-[300vh] -z-10 sticky top-0  flex justify-center  w-full'>
+<div id="split2" className="text-white staat h-[200vh] w-full mx-6  text-4xl lg:text-8xl flex  my-36  flex-col">
             <p>
            Nos pizzas sont faites avec des produits frais et de qualités dans le respect de la tradition italienne.
             </p>{" "}

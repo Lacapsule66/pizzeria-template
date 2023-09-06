@@ -14,7 +14,7 @@ export default function Header2() {
 
 
   return (
-    <Disclosure as="nav" className="fixed w-full z-10 bg-[#222223]">
+    <Disclosure as="nav" className="fixed w-full z-[100] bg-[#222223]">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">

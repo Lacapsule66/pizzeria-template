@@ -24,7 +24,7 @@ export default function Home() {
     //     duration: 1,
     //     ease: "elastic.out(1, 0.3)",
     // });
-    
+
     gsap.from("#rotate", {
       duration: 11,
       rotate: 360,
@@ -55,13 +55,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-[470vh]">
+    <>
       <Anim />
       <Firts />
       <Last />
-     <Carte/>
-      <Contact/>
-      <Footer/>
-    </div>
+      <Carte />
+      <Contact />
+      <Footer />
+    </>
   );
 }
