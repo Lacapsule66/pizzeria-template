@@ -15,19 +15,27 @@ export default function Contact() {
         end: "bottom 100px",
       },
     });
-    gsap.to("pizzaiolo", {
-      height: "100%",
+    gsap.to("#pizzaiolo", {
+      height: "100vh",
       duration: 1.3,
       ease: "power2.out",
+      toggleActions: "restart none none none",
+
+      scrub: 1,
+      
+      objectFit: "cover",
       scrollTrigger: {
-        trigger: "#reveal1",
+        trigger: "#pizzaiolo",
         start: "top center",
         end: "bottom 100px",
+
+        
+      
         },
         });
   }, []);
   return (
-    <div className="bg-[#0f0f0f]  ">
+    <div id="ok2" className="bg-[#0f0f0f]   ">
       <h3 className=" text-center  m-6  heading2 staat text-6xl">
         Nous Contacter
       </h3>

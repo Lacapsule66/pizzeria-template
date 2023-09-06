@@ -48,8 +48,8 @@ export default function Last() {
   
   }, [])
   return (
-    <div className='h-[150vh] lg:h-[300] -z-10 sticky top-0  flex justify-center  w-full'>
-<div id="split2" className="text-white staat h-[200vh] w-full mx-6  text-4xl lg:text-8xl flex  my-36  flex-col">
+    <div className='h-[200vh] lg:h-[200] -z-10 sticky top-0  flex justify-center  w-full'>
+<div id="split2" className="text-white staat h-[100vh] w-full mx-6  text-4xl lg:text-8xl flex  my-36  flex-col">
             <p>
            Nos pizzas sont faites avec des produits frais et de qualités dans le respect de la tradition italienne.
             </p>{" "}
