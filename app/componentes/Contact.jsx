@@ -25,9 +25,13 @@ export default function Contact() {
       
       objectFit: "cover",
       scrollTrigger: {
+        markers: true,
         trigger: "#pizzaiolo",
-        start: "top center",
-        end: "bottom 100px",
+        // commence l'animation quand le top du trigger arrive 200px  avant le  top de la fenêtre
+        start: " bottom bottom",
+        // fin de l'animation quand le bottom du trigger arrive au bottom de la fenêtre
+        end: "bottom bottom",
+
 
         
       
@@ -36,7 +40,7 @@ export default function Contact() {
   }, []);
   return (
     <div id="ok2" className="bg-[#0f0f0f]   ">
-      <h3 className=" text-center  m-6  heading2 staat text-6xl">
+      <h3 className=" text-center   heading2 staat text-6xl">
         Nous Contacter
       </h3>
 

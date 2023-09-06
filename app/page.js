@@ -41,9 +41,10 @@ export default function Home() {
         scrollTrigger: {
           trigger: ".pizza",
           start: "top center",
-          end: "bottom 200px",
+          end: "bottom 500px",
           toggleActions: "restart none none none",
           scrub: 1,
+          markers: true,
         },
         opacity: 1,
         scale: 1,

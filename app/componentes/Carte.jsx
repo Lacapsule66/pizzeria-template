@@ -4,87 +4,138 @@ import { gsap } from "gsap";
 import Image from "next/image";
 export default function Carte() {
   return (
-    <div className="h-[150vh]   py-12 bg-[#ff5c7d]  flex justify-center items-center flex-col">
+    <div className="   py-12 z-50 bg-[#0f0f0f] relative  flex justify-center items-center flex-col">
       <h2 className='staat heading2 text-8xl mb-6'>Nos Pizzas</h2>
     <div className=" grid lg:grid-cols-3 lg:grid-rows-2 grid-cols-1 gap-12 h-[95%] w-[80%]">
-      <div className="grid-item pizza col-span-1 row-span-1 bg-red-500 rounded-xl relative ">
-      <Image
-          className="w-1/2 h-[20vh] rounded-xl absolute top-0 "
-          quality={100}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          src={"/pizza4.jpeg"}
-          width={500}
-          height={500}
-        />
-        <p className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2  z-10 staat text-white text-4xl">
-          Margarita
-        </p>
-      </div>
-      <div className="grid-item pizza col-span-1 row-span-1 bg-red-500 rounded-xl relative ">
-      <Image
-          className="w-1/2 h-[20vh] rounded-xl absolute top-0 "
-          quality={100}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          src={"/pizza4.jpeg"}
-          width={500}
-          height={500}
-        />
-        <p className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2  z-10 staat text-white text-4xl">
-          4 Fromages
-        </p>
-      </div>
-      <div className="grid-item  pizza col-span-1 row-span-1 bg-red-500 rounded-xl relative ">
-      <Image
-          className="w-1/2 h-[20vh] rounded-xl absolute top-0 "
-          quality={100}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          src={"/pizza4.jpeg"}
-          width={500}
-          height={500}
-        />
-        <p className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2  z-10 staat text-white text-4xl">
-          Margarita
-        </p>
-      </div>
-      <div className="grid-item pizza col-span-1 row-span-1 bg-red-500 rounded-xl relative ">
-      <Image
-          className="w-1/2 h-[20vh] rounded-xl absolute top-0 "
-          quality={100}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          src={"/pizza4.jpeg"}
-          width={500}
-          height={500}
-        />
-        <p className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2  z-10 staat text-white text-4xl">
-          Margarita
-        </p>
-      </div>
-      <div className="grid-item pizza col-span-1 row-span-1 bg-red-500 rounded-xl relative ">
-      <Image
-          className="w-1/2 h-[20vh] rounded-xl absolute top-0 "
-          quality={100}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          src={"/pizza4.jpeg"}
-          width={500}
-          height={500}
-        />
-        <p className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2  z-10 staat text-white text-4xl">
-          Margarita
-        </p>
-      </div>
-      <div className="grid-item pizza col-span-1 row-span-1 bg-red-500 rounded-xl relative ">
+      
+    <div className="flex flex-col pizza justify-center items-center shadow-neon-pink rounded-3xl pb-6 ">
         <Image
-          className="w-1/2 h-[20vh] rounded-xl absolute top-0 "
-          quality={100}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          src={"/pizza4.jpeg"}
-          width={500}
-          height={500}
+
+          src="/pizza4.jpeg"
+          alt="pizza"
+          width={300}
+          height={300}
+          className="rounded-3xl"
+          style={{width:'100%'}}
         />
-        <p className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2  z-10 staat text-white text-4xl">
-          Margarita
+        <h3 className="text-white text-4xl mt-6">4 Fromages</h3>
+
+        <p className="text-white text-center text-2xl mt-6 ">
+          Mozzarella, chèvre, gorgonzola, emmental
         </p>
-      </div>
+
+        <button className="bg-white text-[#ff5c7d] text-2xl mt-6 px-6 py-2 rounded-full">
+          Commander
+        </button>
+
+        </div>
+        <div className="flex flex-col pizza justify-center items-center shadow-neon-pink rounded-3xl pb-6 ">
+        <Image
+
+          src="/pizza4.jpeg"
+          alt="pizza"
+          width={300}
+          height={300}
+          className="rounded-3xl"
+          style={{width:'100%'}}
+        />
+        <h3 className="text-white text-4xl mt-6">4 Fromages</h3>
+
+        <p className="text-white text-center text-2xl mt-6 ">
+          Mozzarella, chèvre, gorgonzola, emmental
+        </p>
+
+        <button className="bg-white text-[#ff5c7d] text-2xl mt-6 px-6 py-2 rounded-full">
+          Commander
+        </button>
+
+        </div>
+        <div className="flex flex-col pizza justify-center items-center shadow-neon-pink rounded-3xl pb-6 ">
+        <Image
+
+          src="/pizza4.jpeg"
+          alt="pizza"
+          width={300}
+          height={300}
+          className="rounded-3xl"
+          style={{width:'100%'}}
+        />
+        <h3 className="text-white text-4xl mt-6">4 Fromages</h3>
+
+        <p className="text-white text-center text-2xl mt-6 ">
+          Mozzarella, chèvre, gorgonzola, emmental
+        </p>
+
+        <button className="bg-white text-[#ff5c7d] text-2xl mt-6 px-6 py-2 rounded-full">
+          Commander
+        </button>
+
+        </div>
+        <div className="flex flex-col pizza justify-center items-center shadow-neon-pink rounded-3xl pb-6 ">
+        <Image
+
+          src="/pizza4.jpeg"
+          alt="pizza"
+          width={300}
+          height={300}
+          className="rounded-3xl"
+          style={{width:'100%'}}
+        />
+        <h3 className="text-white text-4xl mt-6">4 Fromages</h3>
+
+        <p className="text-white text-center text-2xl mt-6 ">
+          Mozzarella, chèvre, gorgonzola, emmental
+        </p>
+
+        <button className="bg-white  text-[#ff5c7d] text-2xl mt-6 px-6 py-2 rounded-full">
+          Commander
+        </button>
+
+        </div>
+        <div className="flex flex-col pizza justify-center items-center shadow-neon-pink rounded-3xl pb-6 ">
+        <Image
+
+          src="/pizza4.jpeg"
+          alt="pizza"
+          width={300}
+          height={300}
+          className="rounded-3xl"
+          style={{width:'100%'}}
+        />
+        <h3 className="text-white text-4xl mt-6">4 Fromages</h3>
+
+        <p className="text-white text-center text-2xl mt-6 ">
+          Mozzarella, chèvre, gorgonzola, emmental
+        </p>
+
+        <button className="bg-white text-[#ff5c7d] text-2xl mt-6 px-6 py-2 rounded-full">
+          Commander
+        </button>
+
+        </div>
+        <div className="flex flex-col pizza justify-center items-center shadow-neon-pink rounded-3xl pb-6 ">
+        <Image
+
+          src="/pizza4.jpeg"
+          alt="pizza"
+          width={300}
+          height={300}
+          className="rounded-3xl"
+          style={{width:'100%'}}
+        />
+        <h3 className="text-white text-4xl mt-6">4 Fromages</h3>
+
+        <p className="text-white text-center text-2xl mt-6 ">
+          Mozzarella, chèvre, gorgonzola, emmental
+        </p>
+
+        <button className="bg-white text-[#ff5c7d] text-2xl mt-6 px-6 py-2 rounded-full">
+          Commander
+        </button>
+
+        </div>
+   
+    
     </div>
   </div>
   )
